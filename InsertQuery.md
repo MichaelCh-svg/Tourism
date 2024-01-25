@@ -4,6 +4,11 @@ USE defaultdatabase;
 INSERT INTO site (SiteID, SiteType, City, Country, Continent, SafetyRating, SafetyComment, TravelRequirementComments, DescriptionField)
 VALUES (NULL, '*', '*', '*', '*', *, '*', '*', '*');
 
+>or omit SafetyRating, SafetyComment, TravelRequirementComments
+USE defaultdatabase;
+INSERT INTO site (SiteID, SiteType, City, Country, Continent, DescriptionField)
+VALUES (NULL, '*', '*', '*', '*', '*');
+
 
 ### INSERT user
 
