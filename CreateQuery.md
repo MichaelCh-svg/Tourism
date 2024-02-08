@@ -2,6 +2,7 @@ USE defaultdatabase;
 CREATE TABLE Site
 (
   SiteID SERIAL NOT NULL,
+  SiteName VARCHAR(50) NOT NULL,
   SiteType VARCHAR(50) NOT NULL,
   City VARCHAR(5) NOT NULL,
   Country VARCHAR(5) NOT NULL,
@@ -16,6 +17,10 @@ CREATE TABLE Site
 CREATE TABLE Event
 (
   EventID SERIAL NOT NULL,
+  EventType INT,
+  EventName VARCHAR(50),
+  EventStartDate DATE,
+  EventEndDate DATE,
   EventDescription VARCHAR(500) NOT NULL,
   SiteID BIGINT UNSIGNED NOT NULL UNIQUE,
   PRIMARY KEY (EventID),
