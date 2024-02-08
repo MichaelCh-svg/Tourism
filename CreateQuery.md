@@ -17,7 +17,7 @@ CREATE TABLE Site
 CREATE TABLE Event
 (
   EventID SERIAL NOT NULL,
-  EventType ENUM ('Cultural', 'Recreational', 'Educational', 'Sightseeing', 'Cuisine/Foodational', 'Charity')
+  EventType ENUM ('Cultural', 'Recreational', 'Educational', 'Sightseeing', 'Cuisine/Foodational', 'Charity'),
   EventName VARCHAR(50),
   EventStartDate DATE,
   EventEndDate DATE,
