@@ -7,8 +7,8 @@ VALUES (NULL, '*', '*', '*', '*', '*', *, '*', '*', '*');
 >or omit SafetyRating, SafetyComment, TravelRequirementComments
 
 USE defaultdatabase;
-INSERT INTO site (SiteID, SiteType, City, Country, Continent, DescriptionField)
-VALUES (NULL, '*', '*', '*', '*', '*');
+INSERT INTO site (SiteID, SiteName, SiteType, City, Country, Continent, DescriptionField)
+VALUES (NULL, '*', '*', '*', '*', '*', '*');
 
 
 ### INSERT user
