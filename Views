@@ -1,0 +1,15 @@
+USE defaultdatabase;
+CREATE VIEW SiteSearch AS
+Select EventName, EventType, EventDescription, EventStartDate, EventEndDate, 
+SiteType, City, Country, Continent, SiteName
+from Site S
+LEFT JOIN Event E
+ON S.SiteID = E.SiteID;
+
+CREATE VIEW SiteDisplay AS
+Select EventName, EventType, EventDescription, EventStartDate, EventEndDate, 
+SiteType, City, Country, Continent, SiteName,
+SafetyComment, TravelRequirementComments, DescriptionField
+from Site S
+LEFT JOIN Event E
+ON S.SiteID = E.SiteID;
