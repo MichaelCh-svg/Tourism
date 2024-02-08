@@ -1,12 +1,6 @@
 ### Update event table
 
-UPDATE `defaultdatabase`.`event`
+UPDATE `defaultdatabase`.`TableName`
 SET
-`EventID` = <{EventID: }>,
-`EventType` = <{EventType: }>,
-`EventName` = <{EventName: }>,
-`EventStartDate` = <{EventStartDate: }>,
-`EventEndDate` = <{EventEndDate: }>,
-`EventDescription` = <{EventDescription: }>,
-`SiteID` = <{SiteID: }>
-WHERE `EventID` = <{expr}>;
+'ColumnName' = 'DATA'
+WHERE `InstanceID` = ID;
