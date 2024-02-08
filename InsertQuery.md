@@ -21,6 +21,7 @@ VALUES ('*', '*', '*', NULL);
 ### INSERT review
 
 > omit the date
+
 USE defaultdatabase;
 INSERT INTO review (ReviewID, Review, SiteID, UserID)
 VALUES (*, '*', *, *);
