@@ -2,20 +2,20 @@
 
 USE defaultdatabase;
 INSERT INTO site (SiteID, SiteName, SiteType, City, Country, Continent, SafetyRating, SafetyComment, TravelRequirementComments, DescriptionField)
-VALUES (NULL, '*', '*', '*', '*', '*', *, '*', '*', '*');
+VALUES (NULL, '<text>', '<text>', '<text>', '<text>', '<text>', *, '<text>', '<text>', '<text>');
 
 >or omit SafetyRating, SafetyComment, TravelRequirementComments
 
 USE defaultdatabase;
 INSERT INTO site (SiteID, SiteName, SiteType, City, Country, Continent, DescriptionField)
-VALUES (NULL, '*', '*', '*', '*', '*', '*');
+VALUES (NULL, '<text>', '<text>', '<text>', '<text>', '<text>', '<text>');
 
 
 ### INSERT user
 
 USE defaultdatabase;
 INSERT INTO user (UserName, UserType, PasswordHash, UserID)
-VALUES ('*', '*', '*', NULL);
+VALUES ('<text>', '<text>', '<text>', NULL);
 >UserTypes include: User, Admin, Anonymous
 
 ### INSERT review
@@ -24,7 +24,7 @@ VALUES ('*', '*', '*', NULL);
 
 USE defaultdatabase;
 INSERT INTO review (ReviewID, Review, SiteID, UserID)
-VALUES (*, '*', *, *);
+VALUES (NULL, '<text>', *, *);
 
 
 ### INSERT saved
@@ -38,6 +38,6 @@ VALUES (*, *);
 
 USE defaultdatabase;
 INSERT INTO event (EventID, EventType, EventName, EventStartDate, EventEndDate, EventDescription, SiteID)
-VALUES (NULL, '*', '*', 'YYYY-MM-DD', 'YYYY-MM-DD', '*', *);
+VALUES (NULL, '<text>', '<text>', 'YYYY-MM-DD', 'YYYY-MM-DD', '<text>', *);
 
 >EventTypes include Cultural, Recreational, Educational, Sightseeing, Cuisine/Foodational, Charity
