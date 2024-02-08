@@ -5,6 +5,7 @@ INSERT INTO site (SiteID, SiteType, City, Country, Continent, SafetyRating, Safe
 VALUES (NULL, '*', '*', '*', '*', *, '*', '*', '*');
 
 >or omit SafetyRating, SafetyComment, TravelRequirementComments
+
 USE defaultdatabase;
 INSERT INTO site (SiteID, SiteType, City, Country, Continent, DescriptionField)
 VALUES (NULL, '*', '*', '*', '*', '*');
