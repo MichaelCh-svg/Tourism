@@ -6,7 +6,7 @@ CREATE TABLE Site
   SiteType VARCHAR(50) NOT NULL,
   City VARCHAR(50) NOT NULL,
   Country VARCHAR(50) NOT NULL,
-  Continent ENUM ('North America', 'South America', 'Africa', 'Asia', 'Antarctica', 'Europe', 'Australia'),
+  Continent ENUM ('North_America', 'South_America', 'Africa', 'Asia', 'Antarctica', 'Europe', 'Australia'),
   SafetyRating INT,
   SafetyComment VARCHAR(500),
   TravelRequirementComments VARCHAR(500),
