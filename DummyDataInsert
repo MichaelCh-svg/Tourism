@@ -1,0 +1,9 @@
+USE defaultdatabase;
+INSERT INTO site (SiteID, SiteName, SiteType, City, Country, Continent, SafetyRating, SafetyComment, TravelRequirementComments, DescriptionField)
+VALUES (NULL, 'Sundance', 'Recreation_Outdoor', 'Provo', 'USA', 'North America', 8, 'Break a leg!', 'Buy the tickets', 'Ski resort, with guided nightly owl tours.');
+INSERT INTO site (SiteID, SiteName, SiteType, City, Country, Continent, SafetyRating, SafetyComment, TravelRequirementComments, DescriptionField)
+VALUES (NULL, 'Ganges River', 'Recreation_Outdoor', '', 'India', 'Asia', 3, 'Water rich in nutrients.', '', 'Go canoing in this sweet little river.');
+INSERT INTO site (SiteID, SiteName, SiteType, City, Country, Continent, SafetyRating, SafetyComment, TravelRequirementComments, DescriptionField)
+VALUES (NULL, 'Eiffel Tower', 'Historical', 'Paris', 'France', 'Europe', 1, 'Metal.', '', 'Metal bars that people look at.');
+INSERT INTO site (SiteID, SiteName, SiteType, City, Country, Continent, SafetyRating, SafetyComment, TravelRequirementComments, DescriptionField)
+VALUES (NULL, 'BYU', 'Local', 'Provo', 'USA', 'North America', 8, 'Very safe.', 'Watch out for Isaac Ellis.', 'Metal bars that people look at.');
