@@ -11,3 +11,5 @@ Drop table event;
 Drop table review;
 Drop table site;
 Drop table user;
+Drop view sitesearch;
+Drop view sitedisplay;
