@@ -5,6 +5,7 @@ INSERT INTO site (SiteID, SiteName, SiteType, City, Country, Continent, SafetyRa
 VALUES (NULL, 'DATA', 'DATA', 'DATA', 'DATA', 'DATA', *, 'DATA', 'DATA', 'DATA');
 
 >or omit SafetyRating, SafetyComment, TravelRequirementComments
+>Continent includes: North_America, South_America, Africa, Asia, Antarctica, Europe, Australia
 
 USE defaultdatabase;
 INSERT INTO site (SiteID, SiteName, SiteType, City, Country, Continent, DescriptionField)
