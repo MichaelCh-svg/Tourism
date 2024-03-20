@@ -15,8 +15,7 @@ VALUES (NULL, 'DATA', 'DATA', 'DATA', 'DATA', 'DATA', 'DATA');
 ### INSERT user
 
 USE defaultdatabase;
-INSERT INTO user (UserName, UserType, PasswordHash, UserID)
-VALUES ('DATA', 'DATA', SHA2('DATA', 256), NULL);
+INSERT INTO user (UserName, UserType, PasswordHash, UserID) VALUES ('adam', 'admin', SHA2('tajikistan', 256), NULL);
 >UserTypes include: User, Admin, Anonymous
 
 ### INSERT review
