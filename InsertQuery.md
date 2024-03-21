@@ -29,6 +29,8 @@ VALUES (NULL, 'DATA', *, *);
 
 ### INSERT saved
 
+USE defaultdatabase; INSERT INTO saved (SiteID, UserID) VALUES (1, (SELECT UserID FROM user WHERE UserName = 'elliot'));
+
 USE defaultdatabase;
 INSERT INTO saved (SiteID, UserID)
 VALUES (*, *);
