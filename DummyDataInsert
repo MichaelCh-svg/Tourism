@@ -14,3 +14,12 @@ INSERT INTO event (EventID, EventType, EventName, EventStartDate, EventEndDate, 
 VALUES (NULL, 'Cultural', 'Charity', null, null, 'Donate money to local causes.', 2);
 INSERT INTO event (EventID, EventType, EventName, EventStartDate, EventEndDate, EventDescription, SiteID)
 VALUES (NULL, 'Cuisine', 'Fishing', null, null, 'Fish for Indian Mottled Eel, clown knife fish, spotted barb, silver mahseer.', 2);
+
+INSERT INTO user (UserName, UserType, PasswordHash, UserID) VALUES ('adam', 'admin', SHA2('tajikistan', 256), NULL);
+INSERT INTO user (UserName, UserType, PasswordHash, UserID) VALUES ('elliott', 'user', SHA2('tajikistan', 256), NULL);
+
+USE defaultdatabase; INSERT INTO saved (SiteID, UserID) VALUES (2, (SELECT UserID FROM user WHERE UserName = 'adam'));
+USE defaultdatabase; INSERT INTO saved (SiteID, UserID) VALUES (1, (SELECT UserID FROM user WHERE UserName = 'adam'));
+
+
+
