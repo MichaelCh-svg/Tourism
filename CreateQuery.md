@@ -74,3 +74,30 @@ ON DELETE CASCADE
 	ON UPDATE NO ACTION
 );
 
+CREATE VIEW SiteSearch AS
+Select EventName, EventType, EventDescription, EventStartDate, EventEndDate, 
+SiteType, City, Country, Continent, SiteName, S.SiteID, E.EventID
+from Site S
+LEFT JOIN Event E
+ON S.SiteID = E.SiteID
+UNION
+Select EventName, EventType, EventDescription, EventStartDate, EventEndDate, 
+SiteType, City, Country, Continent, SiteName, S.SiteID, E.EventID
+from Site S
+RIGHT JOIN Event E
+ON S.SiteID = E.SiteID;
+
+CREATE VIEW SiteDisplay AS
+Select EventName, EventType, EventDescription, EventStartDate, EventEndDate, 
+SiteType, City, Country, Continent, SiteName,
+SafetyComment, TravelRequirementComments, DescriptionField, S.SiteID, E.EventID
+from Site S
+LEFT JOIN Event E
+ON S.SiteID = E.SiteID
+UNION
+Select EventName, EventType, EventDescription, EventStartDate, EventEndDate, 
+SiteType, City, Country, Continent, SiteName,
+SafetyComment, TravelRequirementComments, DescriptionField, S.SiteID, E.EventID
+from Site S
+RIGHT JOIN Event E
+ON S.SiteID = E.SiteID;
