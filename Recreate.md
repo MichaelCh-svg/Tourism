@@ -16,4 +16,4 @@ To recreate the project:
 4. Test the site.
    a. If not signed in, view the sites, events, and reviews. Can also register.
    b. If signed in, can leave reviews and save sites.
-   c. If signed in as admin 'adam' with username 'tajikistan', can do everything the user does as well as create sites and events.
+   c. If signed in as admin 'adam' with password 'tajikistan', can do everything the user does as well as create sites and events.
